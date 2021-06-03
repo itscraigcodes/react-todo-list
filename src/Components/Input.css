@@ -1,0 +1,15 @@
+.Input {
+  margin-top: 50px;
+}
+
+.Text {
+  padding: 5px 15px;
+}
+
+.Button {
+  color: #fff;
+  background-color: #22bb33;
+  border: none;
+  padding: 7px 15px;
+  margin-left: 10px;
+}

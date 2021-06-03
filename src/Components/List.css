@@ -1,0 +1,16 @@
+.List {
+  margin-top: 25px;
+}
+
+.Item {
+  margin-top: 5px;
+  list-style-type: none;
+  padding: 5px 15px;
+}
+
+.remove {
+  color: #fff;
+  background-color: #bb2124;
+  border: none;
+  margin-left: 10px;
+}
