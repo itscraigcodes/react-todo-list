@@ -1,16 +1,21 @@
 import React from "react";
 import "./List.css";
 
-const List = () => {
+const List = (props) => {
   return (
     <div className="List">
       <ul>
-        <li className="Item">
-          Walk dog<button className="remove">Remove</button>
-        </li>
-        <li className="Item">
-          Talk Bob<button className="remove">Remove</button>
-        </li>
+        {props.tasks.map((task) => (
+          <li className="item" key={task.id}>
+            {task.input}
+            <button
+              className="remove"
+              onClick={() => props.onDeleteTask(task.id)}
+            >
+              Delete
+            </button>
+          </li>
+        ))}
       </ul>
     </div>
   );
